@@ -2,6 +2,7 @@
 ---
 <br>
 
+![obligatory screen shot](https://raw.githubusercontent.com/davidholiday/foxy/master/foxy_looking_foxy.png "obligatory screen shot")
 
 ### what is? 
 
@@ -15,7 +16,7 @@ Foxy is a python-powered dashboard designed to make using [docker](https://www.d
 
 The first thing you're going to need to do is associate metadata with the docker file you're planning on using to build your container. If you've already got a container(s), you can still use foxy to start, stop, or display the docker inspect report, but you won't be able to view the port resolution tables or have one-click access to available web services. 
 
-Foxy metadata is associated with the *LABEL* tag in a dockerfile. Below is an example of what this might look like for a containerized cloudera cdh stack:
+Foxy metadata is associated with the *LABEL* tag in a dockerfile. Below is an example of what this might look like for [a containerized cloudera cdh stack:](https://github.com/lucamilanesio/docker-cdh5.4 "a containerized cloudera cdh stack:")
 
 ```
 LABEL \
@@ -92,10 +93,11 @@ In docker files, the ```\``` character denotes a line-continuation and the ```#`
 
 
 #### run foxy
-Now that you've created your container, you'll need to fire up foxy. If you don't have the python >=2.7 and cherrypy installed, you'll need to do that first. 
+Now that you've created your container, you'll need to fire up foxy. [Create a virtual environment for python 2.7, activate it](http://docs.python-guide.org/en/latest/dev/virtualenvs/ "Create a virtual environment for python 2.7, activate it"), then execute the setup script:
 
-* [Here are the instructions on how to install python](https://www.python.org/downloads/)
-* [Here are the instructions on how to install cherrypy](http://docs.cherrypy.org/en/latest/install.html)
+```
+python setup.py install
+```
 
 Once you everything installed, start foxy by executing the following script:
 ```
@@ -113,17 +115,13 @@ Foxy will present you with a dashboard with a nav bar on top and a set of panels
 
 ### known issues
 * the search feature is currently in development and is non-functional.
-* foxy needs to be packaged properly so that the user doesn't have to manually install cherrypy.
 * if you create metadata for a given port number then don't expose that port, foxy freaks out. so, yeah, don't do that. 
 * I'm pretty sure you can only associate one tag with a port.
 * None of this has been unit tested.
 * Currently you need to start foxy from within the ./foxy directory -- this is probably an artifact of my not having packaged this correctly yet... 
 * when you click on the 'help' button nothing happens.
+* anyone anal about PEP-8 will probably freak out (rightfully) about the state of the code. if this is you, maybe don't do that. or better yet, make a pull request.
 
-### todo
-* add file explorer
-* add drag/drop capability to file explorer
-* add notification to user when web interfaces are online/go offline 
-* add terminal shell
+
 
 
