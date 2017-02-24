@@ -1,0 +1,156 @@
+
+@media screen and ( max-width: 767px ) {
+
+  .navbar-center
+  {
+      max-width:200px;
+      left: 0;
+      text-align: center;
+      margin:0 auto;
+      padding: 3px;
+  }
+
+
+  .navbar-right {
+      text-align: center;
+  }
+
+  .search-submit {
+    width: 100%;
+  }
+
+
+}
+
+@media screen and ( min-width: 768px ) {
+
+  .navbar-center
+  {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+    padding: 3px;
+  }
+
+  .navbar-right {
+      margin-right: 10px;
+  }
+
+}
+
+
+.navbar-brand {
+  font-size: 3em;
+  line-height: .50em;
+}
+
+
+.navbar-left {
+	padding: 5px;
+}
+
+
+
+.panel-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 950px; 
+}
+
+
+.page-header {
+	border-bottom-color: #2b3e50;
+}
+
+
+.anchor { 
+	padding-top: 50px; 
+}
+
+
+.content-container {
+    margin-top: 100px;
+}
+
+
+.modal-center {
+    margin-top: 200px;
+}
+
+
+table
+{
+    table-layout: fixed;
+    width: 100px;
+}
+
+
+.json-view {
+	font-family: "Lucida Console";
+    word-wrap: break-word;
+    color: #00ff00;
+
+}
+
+
+.json-view .comments {
+	color: #ff00ff;
+}
+
+
+.json-view .bool, .json-view .null, .json-view .num, .json-view .undef {
+    font-weight: 700;
+    color: #ffff00
+}
+
+
+.json-view .str {
+    color: #00ffff;
+}
+
+
+
+/* t/y John Slegers @ http://stackoverflow.com/a/35988890/2234770 */
+
+.progress {
+    margin: 15px;
+}
+
+.progress .progress-bar.active {
+    font-weight: 700;
+    animation: progress-bar-stripes .5s linear infinite;
+}
+
+.dotdotdot:after {
+    font-weight: 300;
+    content: '...';
+    display: inline-block;
+    width: 20px;
+    text-align: left;
+    animation: dotdotdot 1.5s linear infinite;
+}
+
+@keyframes dotdotdot {
+  0%   { content: '...'; }
+  25% { content: ''; }
+  50% { content: '.'; }
+  75% { content: '..'; }
+}
+
+/* ** */
+
+
+.spacer5 { height: 5px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer10 { height: 10px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer15 { height: 15px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer20 { height: 20px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer25 { height: 25px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer30 { height: 30px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer35 { height: 35px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer40 { height: 40px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer45 { height: 45px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer50 { height: 50px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer100 { height: 100px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
+.spacer200 { height: 200px; width: 100%; font-size: 0; margin: 0; padding: 0; border: 0; display: block; }
